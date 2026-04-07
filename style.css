@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+/* Active underline */
+.menu .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+/* Right section */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Language switch */
+.lang {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.lang span {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.lang .active {
+  background: #000;
+  color: #fff;
+}

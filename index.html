@@ -1,27 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Nguyễn Trọng Hải</title>
+  <meta charset="UTF-8">
+  <title>Navbar Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Xin chào, tôi là Tester</h1>
-  <p>Đây là website cá nhân đầu tiên của tôi 🚀</p>
-</body>
-</html>
-<!-- Table -->
-<table>
-  <thead>
-    <tr>
-      <th>Loại Testing</th>
-      <th>Phạm vi</th>
-      <th>Ai thực hiện</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Unit</td>
-      <td>Function/Method</td>
-      <td>Developer</td>
     </tr>
     <tr>
       <td>System</td>
@@ -36,28 +20,29 @@
   src="photo-800.jpg"
   srcset="photo-400.jpg 400w, photo-800.jpg 800w, photo-1200.jpg 1200w"
   sizes="(max-width: 600px) 400px, 800px"
-  alt="Mô tả hình ảnh"
-  width="800" height="600"
-/>
+<header class="navbar">
+  <!-- Logo -->
+  <div class="logo">Hải Vy</div>
 
-<!-- Video -->
-<video controls width="640">
-  <source src="video.mp4" type="video/mp4" />
-  <source src="video.webm" type="video/webm" />
-  Trình duyệt không hỗ trợ video.
-</video>
+  <!-- Menu -->
+  <nav class="menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#" class="active">Quá trình tự học</a>
+    <a href="#">Dự án</a>
+    <a href="#">Kế hoạch</a>
+    <a href="#">Góc chia sẻ</a>
+  </nav>
 
-<!-- Audio -->
-<audio controls>
-  <source src="audio.mp3" type="audio/mpeg" />
-  Trình duyệt không hỗ trợ audio.
-</audio>
+  <!-- Right -->
+  <div class="right">
+    <span class="github">🐙</span>
+    <div class="lang">
+      <span class="active">VI</span>
+      <span>EN</span>
+    </div>
+  </div>
+</header>
 
-<!-- iframe -->
-<iframe
-  src="https://www.youtube.com/embed/video-id"
-  width="560" height="315"
-  sandbox="allow-scripts allow-same-origin"
-  loading="lazy"
-  title="Video title"
-></iframe>
+</body>
+</html>
